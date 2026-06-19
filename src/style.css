@@ -1,13 +1,47 @@
 :root {
-  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'PingFang SC',
-    'Microsoft YaHei', sans-serif;
-  line-height: 1.5;
-  color: var(--color-text);
+  /* 品牌色 */
+  --brand-primary: #1677ff;
+  --brand-primary-hover: #4096ff;
+  --brand-primary-active: #0958d9;
 
-  --color-primary: #42b883;
-  --color-text: #213547;
-  --color-text-soft: #6b7280;
-  --color-border: #e2e8f0;
+  /* 文字色 */
+  --text-title: #262626;
+  --text-body: #595959;
+  --text-caption: #8c8c8c;
+  --text-disabled: #bfbfbf;
+
+  /* 背景色 */
+  --bg-page: #f5f5f5;
+  --bg-card: #ffffff;
+  --bg-selected: #eef6ff;
+  --bg-icon-selected: #e6f4ff;
+  --bg-icon-default: #f2f3f5;
+
+  /* 分割线 */
+  --border-light: #eee;
+  --divider: #ededed;
+  --split: #d9d9d9;
+
+  /* 状态色 */
+  --danger: #ff4d4f;
+
+  /* 圆角 */
+  --radius-sm: 9px;
+  --radius-md: 10px;
+  --radius-lg: 12px;
+
+  /* 阴影 */
+  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.03);
+  --shadow-card-hover: 0 6px 16px rgba(22, 119, 255, 0.12);
+
+  font-family: 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', system-ui,
+    -apple-system, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.5;
+  color: var(--text-title);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 * {
@@ -17,5 +51,10 @@
 body {
   margin: 0;
   min-height: 100vh;
-  background: #f8fafc;
+  background: var(--bg-page);
+  color: var(--text-title);
+}
+
+button {
+  font-family: inherit;
 }
